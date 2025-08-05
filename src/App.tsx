@@ -10,7 +10,7 @@ function App() {
     setBox((prev) => {
       switch(action) {
         case 'up':
-          return prev === 2 ? 8: prev - 3
+          return prev <= 2 ? prev + 6: prev - 3
           case 'down':
             return (prev + 3) % 9
         case 'left':
@@ -19,6 +19,7 @@ function App() {
           return (prev + 1) % 9
       }
     })
+    console.log(box)
   }
 
   return (
