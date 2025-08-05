@@ -22,9 +22,9 @@ const handleClick = (action: 'up' | 'down' | 'left' | 'right') => {
   setBox((prev) => {
     switch(action) {
       case 'up':
-        return prev === 2 ? 8 : prev - 3
-      case 'down':
-        return (prev + 3) % 9
+        return prev <= 2 ? prev + 6: prev - 3
+        case 'down':
+          return (prev + 3) % 9
       case 'left':
         return prev === 0 ? 8 : prev - 1
       case 'right':
