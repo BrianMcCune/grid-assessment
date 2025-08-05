@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid div {
+  border: 5px solid black;
+}
+
+#selected {
+  background-color: cornflowerblue;
+}

@@ -31,4 +31,4 @@ const handleClick = (action: 'up' | 'down' | 'left' | 'right') => {
         return (prev + 1) % 9
     }
   })
-}# grid-assessment
+}
